@@ -25,6 +25,7 @@ def mint():
         address,
 
     ).build_transaction({
+        'chainId':7777777, 
         'nonce': web3.eth.get_transaction_count(address),
         'gasPrice': gasPrice,
         'value': pricenft,
